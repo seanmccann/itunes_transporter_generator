@@ -2,14 +2,14 @@ module Itunes
   module Transporter
     class Achievement < Struct.new(:id, :name, :points, :hidden, :reusable, :should_remove, :locales) 
       def to_s
-			  "#{self.id} #{self.name}"
-		  end
+        "#{self.id} #{self.name}"
+      end
     end
 
     class AchievementLocale < Struct.new(:name, :title, :before_earned_description, :after_earned_description, :achievement_after_earned_image, :should_remove)
-		  def to_s
-			  "#{self.name} #{self.title}"
-		  end
+      def to_s
+        "#{self.name} #{self.title}"
+      end
     end
 
     class Leaderboard < Struct.new(:default, :id, :name, :aggregate_parent_leaderboard, :sort_ascending, :score_range_min, :score_range_max, :locales)
