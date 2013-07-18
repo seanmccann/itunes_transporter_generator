@@ -1,7 +1,7 @@
 module Itunes
   module Transporter
     class Achievement < Struct.new(:id, :name, :points, :hidden, :reusable, :should_remove, :locales) 
-		  def to_s
+      def to_s
 			  "#{self.id} #{self.name}"
 		  end
     end
